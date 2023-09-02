@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a7717dae.css",
+    "main.js": "/static/js/main.e49a6520.js",
+    "static/js/787.48f34ca9.chunk.js": "/static/js/787.48f34ca9.chunk.js",
+    "static/media/ordinaments.gif": "/static/media/ordinaments.8e4cc129f9ba7bd34dc4.gif",
+    "static/media/KyivTypeSans-Bold.woff": "/static/media/KyivTypeSans-Bold.8537fc7f3b2a9a1d3121.woff",
+    "static/media/KyivTypeSans-Medium.woff": "/static/media/KyivTypeSans-Medium.7766e444630eeca4683b.woff",
+    "static/media/musicmode-active1.gif": "/static/media/musicmode-active1.e3181bacef3201039fde.gif",
+    "static/media/musicmode1.gif": "/static/media/musicmode1.e5a3cc222f57b82020d4.gif",
+    "static/media/info.svg": "/static/media/info.2a2641509d545b8499e8.svg",
+    "static/media/navigate.svg": "/static/media/navigate.dc810de2935db9a6691d.svg",
+    "static/media/info-active.svg": "/static/media/info-active.ec43d7799cdda60a99a1.svg",
+    "static/media/navigate-active.svg": "/static/media/navigate-active.961cecffb154aa12a2a2.svg",
+    "static/media/waterside.svg": "/static/media/waterside.82f43c67fa21f5c44d18.svg",
+    "static/media/industrial.svg": "/static/media/industrial.3f5d96e4e31f04b9124d.svg",
+    "static/media/street.svg": "/static/media/street.ecd8fa27bf15395181bc.svg",
+    "static/media/waterside-active.svg": "/static/media/waterside-active.b82c86a94d46a074f836.svg",
+    "static/media/street-active.svg": "/static/media/street-active.60c1f2805648533e2a10.svg",
+    "static/media/nature.svg": "/static/media/nature.8b33fb0cfcafed9a5f93.svg",
+    "static/media/industrial-active.svg": "/static/media/industrial-active.b5245fd2ea226ef567e2.svg",
+    "static/media/start.svg": "/static/media/start.6cee43ba6a65498fb16f.svg",
+    "static/media/nature-active.svg": "/static/media/nature-active.097cca243e3729f44e4d.svg",
+    "static/media/back.svg": "/static/media/back.a2710e19324435fc19db.svg",
+    "static/media/start-active.svg": "/static/media/start-active.19d76b41766448b86dfe.svg",
+    "static/media/back-active.svg": "/static/media/back-active.df1e36fe7d8b8cf14fcd.svg",
+    "index.html": "/index.html",
+    "main.a7717dae.css.map": "/static/css/main.a7717dae.css.map",
+    "main.e49a6520.js.map": "/static/js/main.e49a6520.js.map",
+    "787.48f34ca9.chunk.js.map": "/static/js/787.48f34ca9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7717dae.css",
+    "static/js/main.e49a6520.js"
+  ]
+}
