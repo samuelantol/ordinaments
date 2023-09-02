@@ -156,22 +156,66 @@ class ThreeObject extends React.Component {
             }
         }
         
-        var onDocumentMouseMove = function(event) {
-            if (window.innerWidth <= 500) {
-                mouseX = ( - event.clientX + windowHalfX ) / 2;
-                mouseY = ( - event.clientY + windowHalfY ) / 2;
-            } else {
-                if (music) {
-                    mouseX = ( - event.clientX + windowHalfX ) / 8;
-                    mouseY = ( - event.clientY + windowHalfY ) / 8;
-                } else {
-                    mouseX = ( - event.clientX + windowHalfX ) / 5;
-                    mouseY = ( - event.clientY + windowHalfY ) / 5;
-                }
-            }
-        }
+        // var onDocumentMouseMove = function(event) {
+        //     if (window.innerWidth <= 500) {
+        //         mouseX = ( - event.clientX + windowHalfX ) / 2;
+        //         mouseY = ( - event.clientY + windowHalfY ) / 2;
+        //     } else {
+        //         if (music) {
+        //             mouseX = ( - event.clientX + windowHalfX ) / 8;
+        //             mouseY = ( - event.clientY + windowHalfY ) / 8;
+        //         } else {
+        //             mouseX = ( - event.clientX + windowHalfX ) / 5;
+        //             mouseY = ( - event.clientY + windowHalfY ) / 5;
+        //         }
+        //     }
+        // }
 
-        document.addEventListener( 'mousemove', onDocumentMouseMove );
+        // document.addEventListener( 'mousemove', onDocumentMouseMove );
+
+        // Define variables to track touch positions
+        let touchX = 0;
+        let touchY = 0;
+
+        // Add a touchmove event listener to the document
+        document.addEventListener('touchmove', function (event) {
+            // Prevent the default behavior of touch events, which can interfere with dragging
+            event.preventDefault();
+
+            // Check if there is a single touch event
+            if (event.touches.length === 1) {
+                // Get the coordinates of the touch
+                const touch = event.touches[0];
+                touchX = touch.pageX;
+                touchY = touch.pageY;
+
+                // You can now use the touchX and touchY values to control rotation
+                // Example:
+                // Rotate based on touch movement on the X and Y axes
+                const sensitivity = 8; // Adjust the sensitivity as needed
+                mouseX = (touchX - windowHalfX) / sensitivity;
+                mouseY = (touchY - windowHalfY) / sensitivity;
+            }
+        });
+
+        // Additionally, you can add touchstart and touchend event listeners to handle the start and end of the touch interaction.
+
+        // Add a touchstart event listener to the document
+        document.addEventListener('touchstart', function (event) {
+        // Prevent the default behavior of touch events
+        event.preventDefault();
+        // You can perform any setup needed when the touch interaction begins
+        });
+
+        // Add a touchend event listener to the document
+        document.addEventListener('touchend', function (event) {
+        // Prevent the default behavior of touch events
+        event.preventDefault();
+        // You can perform any cleanup needed when the touch interaction ends
+        });
+
+        //END
+
         window.addEventListener( 'resize', onWindowResize );
 
         var fractionate = function(val, minVal, maxVal) {

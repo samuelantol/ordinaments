@@ -24,23 +24,23 @@ const locationLat = [
   48.178587, null, null, 48.166760, 48.166361,
   48.187033, null, null, null, null,
 ];
-const locationLng = [
-  null, null, 17.109355, null, null,
-  null, null, 17.109346, 17.109271, null,
-  null, 17.119957, 17.108921, 17.110219, null,
-  null, 17.120805, 17.120805, null, null,
-  null, 17.130201, 17.113912, null, null,
-  17.138520, 17.128285, 17.122677, 17.104718, null,
-  null, null, 17.112417, 17.103040, 17.078974,
-  null, 17.121171, 17.118235, 17.102886, null,
-  null, null, 17.115236, 17.114630, null,
-  null, 17.126111, 17.121254, 17.112588, null,
-  17.125884, 17.125438, null, 17.070983, null,
-  null, 17.117899, 17.117899, 17.117899, null,
-  null, 17.103504, 17.101578, 17.088770, null,
-  17.185456, null, null, 17.086064, 17.083742,
-  17.189900, null, null, null, null,
-];
+// const locationLng = [
+//   null, null, 17.109355, null, null,
+//   null, null, 17.109346, 17.109271, null,
+//   null, 17.119957, 17.108921, 17.110219, null,
+//   null, 17.120805, 17.120805, null, null,
+//   null, 17.130201, 17.113912, null, null,
+//   17.138520, 17.128285, 17.122677, 17.104718, null,
+//   null, null, 17.112417, 17.103040, 17.078974,
+//   null, 17.121171, 17.118235, 17.102886, null,
+//   null, null, 17.115236, 17.114630, null,
+//   null, 17.126111, 17.121254, 17.112588, null,
+//   17.125884, 17.125438, null, 17.070983, null,
+//   null, 17.117899, 17.117899, 17.117899, null,
+//   null, 17.103504, 17.101578, 17.088770, null,
+//   17.185456, null, null, 17.086064, 17.083742,
+//   17.189900, null, null, null, null,
+// ];
 
 let line1 = [ //zobrazuje sa to naopak (posledna je prva)
   null, null, 'entrance to the tunnel', null, null,
@@ -372,7 +372,7 @@ class Navigation extends Component {
 
   secondaryBuilder() {
     // const mapLink = "https://mapy.cz/zakladni?q=" + locationLat[activeId-1] + "," + locationLng[activeId-1];
-    const mapLink = "https://www.google.com/maps/search/?api=1&query=" + locationLat[activeId-1] + "," + locationLng[activeId-1];
+    // const mapLink = "https://www.google.com/maps/search/?api=1&query=" + locationLat[activeId-1] + "," + locationLng[activeId-1];
     
     return (
       <div>
@@ -380,11 +380,11 @@ class Navigation extends Component {
 
         <p className={'description'}>{line1[activeId-1]}<br/>{line2[activeId-1]}</p>
         
-        <a href={mapLink} rel="noreferrer" target="_blank">
+        {/* <a href={mapLink} rel="noreferrer" target="_blank">
           <div
             className={'secondary-map'}
           />
-        </a>
+        </a> */}
 
         <div
           className={'secondary-info'}

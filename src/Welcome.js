@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './welcome.css';
 
-import Cursor from './Cursor.js';
+//import Cursor from './Cursor.js';
 
 class Welcome extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class Welcome extends Component {
         return(
             <div>
                 <div className={'background'}/>
-                <Cursor />
+                {/* <Cursor /> */}
                 <div className={'w-ordinaments-logo'} />
                 <div className={'w-instruction-container'}>
                     <div className={'w-instruction'}>1 highlight category you’re interested in (at the top)<br/><div className={'desc'}>nature, industrial, street, or waterside</div></div>

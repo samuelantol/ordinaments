@@ -1,6 +1,7 @@
 import React from 'react';
 import mapboxgl from 'mapbox-gl';
 import './map.css';
+//import "../node_modules/mapbox-gl/dist/mapbox-gl.css"
 
 const locationLat = [
   null, null, 48.093801, null, null,

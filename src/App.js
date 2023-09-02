@@ -8,7 +8,7 @@ import MapMusic from './MapMusic.js';
 import MNavigation from './mobile/mNavigation.js';
 
 import Sounds from './Sounds.js';
-import Cursor from './Cursor.js';
+//import Cursor from './Cursor.js';
 import About from './About.js';
 import Welcome from './Welcome.js';
 
@@ -60,7 +60,7 @@ class App extends Component {
             <ThreeObject dataAppToThreeObject1 = {this.state.activeId} dataAppToThreeObject2 = {this.state.music}/>
             <Sounds dataAppToSounds = {this.state.activeId} start = {this.state.isStart}/>
             <div>
-              <Cursor />
+              {/* <Cursor /> */}
               <Navigation
                 activeId={this.state.activeId} 
                 handleIdChange={this.handleIdChange}
@@ -85,7 +85,7 @@ class App extends Component {
             <ThreeObject dataAppToThreeObject1 = {this.state.activeId} dataAppToThreeObject2 = {this.state.music}/>
             <Sounds dataAppToSounds = {this.state.activeId}/>
             <div>
-              <Cursor />
+              {/* <Cursor /> */}
               <Navigation
                 activeId={this.state.activeId} 
                 handleIdChange={this.handleIdChange}
@@ -107,7 +107,7 @@ class App extends Component {
         <div>
           <ThreeObject dataAppToThreeObject1 = {this.state.activeId} dataAppToThreeObject2 = {this.state.music}/>
           <div>
-            <Cursor />
+            {/* <Cursor /> */}
             <Navigation
               activeId={this.state.activeId} 
               handleIdChange={this.handleIdChange} 
@@ -125,7 +125,7 @@ class App extends Component {
       <div>
         <MapMusic dataAppToMap = {0}/>
         <div>
-          <Cursor />
+          {/* <Cursor /> */}
           <div>
             <About handleInfoChange={this.handleInfoChange}/>
           </div>
